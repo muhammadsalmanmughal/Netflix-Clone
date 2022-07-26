@@ -7,15 +7,15 @@ import "./style.css";
 const Navbar = () => {
   return (
     <Row
-      gutter={[10, 10]}
+      // gutter={[10, 10]}
       align="middle"
       justify="space-evenly"
       className="zero_margin nav_row navbar"
     >
-      <Col span={11} >
+      <Col span={11}>
         <img src={Images.Logo} className="nav_logo" />
       </Col>
-      <Col span={11} >
+      <Col span={11}>
         <a className="nav_signin">Sign In</a>
       </Col>
     </Row>

@@ -1,3 +1,4 @@
-import Banner from "./Home";
+import Banner from "./Banner";
+import LoginHome from "./Home";
 
-export { Banner };
+export { Banner, LoginHome };
