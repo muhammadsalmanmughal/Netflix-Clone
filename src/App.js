@@ -1,14 +1,11 @@
 import './App.css';
 import { Button } from 'antd';
-import {Navbar} from './components'
+import {Banner} from './containers'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-       <Button type="primary">
-        Primary
-      </Button>
+<Banner/>
     </div>
   );
 }
