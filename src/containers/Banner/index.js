@@ -24,8 +24,11 @@ const Banner = () => {
         </Row>
       </Col>
 
-      <Col span={24}>
-        <Row className="banner-content" align="middle" justify="center">
+      <Col xs={24} sm={24} md={24} lg={14} xl={12}
+      //  span={8} 
+      // style={{background:'blue'}}
+      >
+        <Row className="banner-content" align="middle" justify="center" style={{padding:'45px'}}>
           <Col span={24}>
             <h1 className="banner-mainHeading zero_margin">
               Unlimited movies, TV
@@ -35,12 +38,12 @@ const Banner = () => {
             <h2 className="banner-subHeading">
               Watch anywhere. Cancel anytime.
             </h2>
-            <h3 className="banner-subHeading">
+            <h3 className="banner-para">
               Ready to watch? Enter your email to create or restart your
               membership.
             </h3>
           </Col>
-          <Col xs={24} sm={24} md={20} lg={9}  className='getstarted'>
+          <Col xs={24} sm={24} md={24} lg={24}  className='getstarted'>
             <Getstarted />
           </Col>
         </Row>

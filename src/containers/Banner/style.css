@@ -68,6 +68,7 @@
     position: relative;
     z-index: 2;
     text-align: center;
+    padding: 45px;
 }
 
 .banner-mainHeading {
@@ -78,13 +79,39 @@
 }
 
 .banner-subHeading {
-    font-size: 20px;
+    font-size: 1.625rem;
     color: #FFFFFF;
     font-weight: 400;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
     text-align: center;
 }
+.banner-para{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
 .getstarted{
-margin-top: 20px;
+/* margin-top: 20px; */
 margin-bottom: 10%;
 }
+
+@media screen and (max-width: 1024px) {
+    .banner-mainHeading {
+        font-size: 3.125rem;
+    }
+    .banner-subHeading {
+        font-size: 1.625rem;
+    }
+  }
+@media screen and (max-width: 375px) {
+    .banner-content {
+        padding: 20px;
+    }
+    .banner-mainHeading {
+        font-size: 1.75rem;
+        line-height: 35px;
+    }
+    .banner-subHeading {
+        font-size: 1.125rem;
+    }   
+  }

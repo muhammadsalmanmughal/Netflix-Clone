@@ -20,3 +20,8 @@
     color: #FFFFFF;
     background: #e50914;
 }
+@media screen and (max-width: 375px) {
+    .getstarted-button .ant-btn{
+        margin-top: 15px;
+    }
+  }

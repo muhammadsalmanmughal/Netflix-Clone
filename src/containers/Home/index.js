@@ -4,7 +4,7 @@ import { Row, Col } from "antd";
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <Banner />
       <h1>asdfasdfads</h1>
     </div>
