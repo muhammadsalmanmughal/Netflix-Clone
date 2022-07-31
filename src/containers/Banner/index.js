@@ -40,7 +40,7 @@ const Banner = () => {
               membership.
             </h3>
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={24} md={20} lg={9}  className='getstarted'>
             <Getstarted />
           </Col>
         </Row>
