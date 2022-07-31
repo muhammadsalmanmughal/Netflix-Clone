@@ -60,12 +60,14 @@
 } 
 /* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
 .banner-content {
-    display: flex;
+    /* display: flex; */
     /* justify-content: center;
     align-items: center; */
     margin-top: 150px;
+    width: 100%;
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .banner-mainHeading {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { Images } from "../../config";
+import { Getstarted } from "../../components";
 
 import "./style.css";
 import "../../App.css";
@@ -25,7 +26,7 @@ const Banner = () => {
 
       <Col span={24}>
         <Row className="banner-content" align="middle" justify="center">
-          <Col xs={24} sm={24} md={12} lg={12}>
+          <Col span={24}>
             <h1 className="banner-mainHeading zero_margin">
               Unlimited movies, TV
               <br />
@@ -38,6 +39,9 @@ const Banner = () => {
               Ready to watch? Enter your email to create or restart your
               membership.
             </h3>
+          </Col>
+          <Col span={8}>
+            <Getstarted />
           </Col>
         </Row>
       </Col>
