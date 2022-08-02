@@ -7,7 +7,7 @@ import "./style.css";
 
 const MainSection = () => {
   return (
-    <Row gutter={[10, 10]} className='mainsection'>
+    <Row className='mainsection'>
       <Col span={12}>
         <Text.MainSectionText
           title="Enjoy on your TV."
