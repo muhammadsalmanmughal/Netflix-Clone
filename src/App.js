@@ -1,13 +1,11 @@
-import './App.css';
-import { Button } from 'antd';
-
+import "./App.css";
+import { Button } from "antd";
+import { LoginHome } from "./containers";
 
 function App() {
   return (
     <div className="App">
-       <Button type="primary">
-        Primary
-      </Button>
+      <LoginHome />
     </div>
   );
 }
