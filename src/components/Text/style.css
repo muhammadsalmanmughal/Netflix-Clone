@@ -7,3 +7,11 @@
     font-size: 1.625rem;
     font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+    .title {   
+    font-size: 2.5rem;
+    }
+    .subtitle {   
+    font-size: 1.35rem;
+    }
+  }
