@@ -18,8 +18,7 @@ const Home = () => {
       <MainSection 
         title="Enjoy on your TV."
         subtitle="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-        img={Images.TV}
-        video={Videos.TV_Video}
+        img={Images.STMobile}
         mediaIndex='1'
         textIndex= '2'
       />
