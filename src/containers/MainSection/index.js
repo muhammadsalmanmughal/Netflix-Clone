@@ -74,12 +74,19 @@ const MainSection = (props) => {
                     <img src={props.img} className="img" />
                   </Col>
 
-                  <Col span={24} className="mainsection-card-animation">
-                    <Row align="middle" justify="space-between">
+                  <Col
+                    // xs={14}
+                    // sm={14}
+                    // md={24}
+                    // lg={24}
+                    // span={24}
+                    className="mainsection-card-animation"
+                  >
+                    <Row align="middle" justify="space-between" style={{width:'100%'}}>
                       <Col
                         xs={4}
                         sm={4}
-                        md={4}
+                        md={3}
                         lg={4}
                         className="mainsection-card-animation-img"
                       >
@@ -93,8 +100,12 @@ const MainSection = (props) => {
                         className="mainsection-card-animation-text"
                       >
                         <Row>
-                          <Col span={24}>Stranger Things</Col>
-                          <Col span={24}>Downloading...</Col>
+                          <Col span={24} className="text-0">
+                            Stranger Things
+                          </Col>
+                          <Col span={24} className="text-1">
+                            Downloading...
+                          </Col>
                         </Row>
                       </Col>
                       <Col
@@ -103,8 +114,7 @@ const MainSection = (props) => {
                         md={4}
                         lg={4}
                         className="mainsection-card-animation-text-loader"
-                      >
-                        LOAD
+                      > 
                       </Col>
                     </Row>
                   </Col>
