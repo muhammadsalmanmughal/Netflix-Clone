@@ -16,10 +16,9 @@ const Home = () => {
         mediaIndex='2'
       />
       <MainSection 
-        title="Enjoy on your TV."
-        subtitle="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-        img={Images.TV}
-        video={Videos.TV_Video}
+        title="Download your shows to watch offline."
+        subtitle="Save your favorites easily and always have something to watch."
+        img={Images.STMobile}
         mediaIndex='1'
         textIndex= '2'
       />
