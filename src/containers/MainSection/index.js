@@ -39,17 +39,19 @@ const MainSection = (props) => {
                   <Col span={24}>
                     <img src={props.img} className="img" />
                   </Col>
-                  <Col span={24} className="videoBox">
-                    <video
-                      className="video"
-                      autoplay="true"
-                      playsinline="true"
-                      muted="true"
-                      loop="true"
-                    >
-                      <source src={props.video} type="video/mp4" />
-                    </video>
-                  </Col>
+                  {props.video && (
+                    <Col span={24} className="videoBox">
+                      <video
+                        className="video"
+                        autoplay="true"
+                        playsinline="true"
+                        muted="true"
+                        loop="true"
+                      >
+                        <source src={props.video} type="video/mp4" />
+                      </video>
+                    </Col>
+                  )}
                 </Row>
               </Col>
             </Row>
@@ -67,37 +69,60 @@ const MainSection = (props) => {
                 // span={8}
                 //   style={{background:'blue'}}
               >
-                <Row>
+                <Row align="middle" justify="center">
                   <Col span={24}>
                     <img src={props.img} className="img" />
-                    <Row>
-                      <Col span={24} className="mainsection-card-animation" style={{background:'red'}}>
-                        <Row align="middle" justify="space-between">
-                          <Col xs={4} sm={4} md={4} lg={4} className="mainsection-card-animation-img" style={{background:'blue'}}>
-                            <img src={Images.BoxShot} />
-                          </Col>
-                          <Col xs={14} sm={14} md={14} lg={14} className="mainsection-card-animation-text" style={{background:'green'}}>
-                            <Row>
-                              <Col span={24}>Stranger Things</Col>
-                              <Col span={24}>Downloading...</Col>
-                            </Row>
-                          </Col>
-                          <Col xs={4} sm={4} md={4} lg={4} className="mainsection-card-animation-text-loader" style={{background:'yellow'}}>LOAD</Col>
+                  </Col>
+
+                  <Col span={24} className="mainsection-card-animation">
+                    <Row align="middle" justify="space-between">
+                      <Col
+                        xs={4}
+                        sm={4}
+                        md={4}
+                        lg={4}
+                        className="mainsection-card-animation-img"
+                      >
+                        <img src={Images.BoxShot} />
+                      </Col>
+                      <Col
+                        xs={14}
+                        sm={14}
+                        md={14}
+                        lg={14}
+                        className="mainsection-card-animation-text"
+                      >
+                        <Row>
+                          <Col span={24}>Stranger Things</Col>
+                          <Col span={24}>Downloading...</Col>
                         </Row>
+                      </Col>
+                      <Col
+                        xs={4}
+                        sm={4}
+                        md={4}
+                        lg={4}
+                        className="mainsection-card-animation-text-loader"
+                      >
+                        LOAD
                       </Col>
                     </Row>
                   </Col>
-                  <Col span={24} className="videoBox">
-                    <video
-                      className="video"
-                      autoplay="true"
-                      playsinline="true"
-                      muted="true"
-                      loop="true"
-                    >
-                      <source src={props.video} type="video/mp4" />
-                    </video>
-                  </Col>
+                  {/* </Row>
+                  </Col> */}
+                  {props.video && (
+                    <Col span={24} className="videoBox">
+                      <video
+                        className="video"
+                        autoplay="true"
+                        playsinline="true"
+                        muted="true"
+                        loop="true"
+                      >
+                        <source src={props.video} type="video/mp4" />
+                      </video>
+                    </Col>
+                  )}
                 </Row>
               </Col>
               <Col
