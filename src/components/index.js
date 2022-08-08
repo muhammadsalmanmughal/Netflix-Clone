@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Getstarted from "./Getstarted";
-import Text from './Text'
+import Text from "./Text";
+import AnimatedImage from "./AnimatedImage";
 
-export { Navbar,Getstarted,Text };
+export { Navbar, Getstarted, Text, AnimatedImage };
