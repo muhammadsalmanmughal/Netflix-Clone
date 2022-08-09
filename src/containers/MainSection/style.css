@@ -1,4 +1,4 @@
-.mainsection {
+.our-main-section {
     /* background: black;
     display: flex;
     align-items: baseline; */
@@ -12,9 +12,10 @@
     position: relative;
 }
 
-.mainsection .mainsection-container {
+.our-main-section .our-main-section-container {
     align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1100px;
@@ -107,11 +108,16 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .mainsection .mainsection-container{
+    .mainsection .mainsection-container {
         margin: 0;
     }
 }
+
 @media screen and (max-width: 768px) {
+    .our-main-section .our-main-section-container {
+        flex-direction: column;
+    }
+
     .mainsection-text {
         text-align: center;
     }
