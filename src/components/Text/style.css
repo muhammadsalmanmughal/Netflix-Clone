@@ -1,17 +1,44 @@
-.title{
+.our-main-section-text {
+    flex: 0 1 auto;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 52%;
+    z-index: 3;
+}
+
+.title {
     color: #FFFFFF;
     font-size: 3.125rem;
 }
-.subtitle{
+
+.subtitle {
     color: #FFFFFF;
     font-size: 1.625rem;
     font-weight: 400;
 }
+
 @media screen and (max-width: 768px) {
-    .title {   
-    font-size: 2.5rem;
+    .our-main-section-text {
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
-    .subtitle {   
-    font-size: 1.35rem;
+
+    .title {
+        font-size: 2.5rem;
     }
-  }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
