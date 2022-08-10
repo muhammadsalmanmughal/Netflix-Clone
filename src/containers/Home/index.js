@@ -29,15 +29,18 @@ const Home = () => {
         mediaIndex="1"
         textIndex="2"
       />
-      {/* <MainSection.MainSectionText
+        <MainSection.TextAndImage
         title="Watch everywhere."
         subtitle="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
-        // img={Images.STMobile}
-        // imgText0='Stranger Things'
-        // imgText1='Downloading...'
-        // mediaIndex='1'
-        // textIndex= '2'
-      /> */}
+      />
+         <MainSection.ImageAndText
+        title="Download your shows to watch offline."
+        subtitle="Save your favorites easily and always have something to watch."
+        img={Images.STMobile}
+        animationImg={objShowAnimation}
+        mediaIndex="1"
+        textIndex="2"
+      />
     </div>
   );
 };
