@@ -33,14 +33,12 @@ const Home = () => {
         title="Watch everywhere."
         subtitle="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
       />
-         <MainSection.ImageAndText
-        title="Download your shows to watch offline."
-        subtitle="Save your favorites easily and always have something to watch."
-        img={Images.STMobile}
-        animationImg={objShowAnimation}
-        mediaIndex="1"
-        textIndex="2"
+        <MainSection.ImageAndText
+        title="Create profiles for kids."
+        subtitle="Send kids on adventures with their favorite characters in a space made just for them—free with your membership."
+        img={Images.Create_Kids_Profile}
       />
+      
     </div>
   );
 };
