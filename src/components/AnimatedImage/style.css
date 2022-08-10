@@ -36,9 +36,86 @@
     transform: translate(-50%, -50%);
     width: 100%;
 }
+/* =========================================== */
+.our-main-section-card-animation {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 #000;
+    left: 50%;
+    margin: 0 auto;
+    min-width: 15em;
+    padding: 0.25em 0.65em;
+    position: absolute !important;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 2;
+}
+/* .our-main-section-card-animation-img{
+    width: 20%;
+} */
+.our-main-section-card-animation-img img {
+    height: 5em;
+}
 
+.our-main-section-card-animation-text {
+    margin: 0.3em 0;
+    width: 65%;
+}
+
+.our-main-section-card-animation-text-loader {
+    text-align: center;
+    background: url('../../assets/videos/loading-animation.gif') 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+}
+
+.our-main-section-card-animation-text .text-0 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.our-main-section-card-animation-text .text-1 {
+    color: #0071eb;
+    font-size: 15px;
+    font-weight: 400;
+}
 @media screen and (max-width: 768px) {
+    .our-main-section-card-animation-img img{
+        height: 7em;
+    }
+    .our-main-section-card-animation-text{
+        width: 55%;
+    }
+    .our-main-section-card-animation-text-loader{
+        width: 15%;
+    }
     .our-main-section-image-container {
         width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .our-main-section-card-animation-img img{
+        height: 4em;
+    }
+    .our-main-section-card-animation-text .text-0 {
+        font-size: 14px;
+    }
+    .our-main-section-card-animation-text .text-1 {
+        font-size: 13px;
+    }
+    .our-main-section-card-animation-text{
+        margin: 0.3em 9px;
     }
 }
