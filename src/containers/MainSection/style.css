@@ -37,6 +37,16 @@
     text-align: center;
 }
 
+.get-started-para {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.faqs-get-started {
+    width: 45% !important;
+    margin: 4em auto !important;
+}
+
 /* FAQ section css end */
 
 @media screen and (max-width: 768px) {
