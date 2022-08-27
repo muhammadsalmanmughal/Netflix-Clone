@@ -1,6 +1,8 @@
 .ant-collapse {
     background-color: #000000 !important;
     border: none !important;
+    width: 75% !important;
+    margin: 2em auto !important;
 }
 
 .ant-collapse .ant-collapse-header {
@@ -52,7 +54,17 @@
     font-size: 23px !important;
     vertical-align: -4px !important;
 }
-
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+    margin-right: 0 !important;
+    margin-left: 10px;
+}
 .ant-collapse-item-active .ant-collapse-arrow svg {
     transform: rotate(43deg) !important;
+}
+
+@media screen and (max-width: 768px) {
+    .ant-collapse {
+        width: 90% !important;
+        margin: 1.5em auto !important;
+    }
 }

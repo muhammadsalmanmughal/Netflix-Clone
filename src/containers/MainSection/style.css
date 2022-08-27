@@ -31,20 +31,13 @@
 }
 
 /* FAQ section css start */
-.main-heading{
+.main-heading {
     font-size: 3.125rem;
     color: #FFFFFF;
     text-align: center;
 }
-.faq-container{
-    width: 50%;
-    margin: 2% auto;
-}
-/* FAQ section css end */
 
-@media screen and (max-width: 1024px) {
-   
-}
+/* FAQ section css end */
 
 @media screen and (max-width: 768px) {
     .our-main-section .our-main-section-container {
@@ -73,6 +66,10 @@
 }
 
 @media screen and (max-width: 375px) {
+    .main-heading {
+        font-size: 1.8em;
+    }
+
     /* .mainsection-card-animation-img img {
         height: 3em;
     }
