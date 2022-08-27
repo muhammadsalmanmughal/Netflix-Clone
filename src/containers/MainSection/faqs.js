@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapsible } from "../../components";
+import { Collapsible, Getstarted } from "../../components";
 import "./style.css";
 
 const SectionFAQS = (props) => {
@@ -11,6 +11,12 @@ const SectionFAQS = (props) => {
         {props?.QNA.map((item) => {
           return <Collapsible ques={item.question} ans={item.answer} />;
         })}
+      </div>
+      <div className="faqs-get-started">
+      <h3 className="get-started-para">
+        Ready to watch? Enter your email to create or restart your membership.
+      </h3>
+        <Getstarted />
       </div>
     </div>
   );

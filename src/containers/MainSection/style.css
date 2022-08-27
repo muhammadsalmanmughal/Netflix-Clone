@@ -31,20 +31,25 @@
 }
 
 /* FAQ section css start */
-.main-heading{
+.main-heading {
     font-size: 3.125rem;
     color: #FFFFFF;
     text-align: center;
 }
-.faq-container{
-    width: 75%;
-    margin: 2% auto;
-}
-/* FAQ section css end */
 
-@media screen and (max-width: 1024px) {
-   
+.get-started-para {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }
+
+.faqs-get-started {
+    width: 45% !important;
+    margin: 4em auto !important;
+}
+
+/* FAQ section css end */
 
 @media screen and (max-width: 768px) {
     .our-main-section .our-main-section-container {
@@ -73,6 +78,10 @@
 }
 
 @media screen and (max-width: 375px) {
+    .main-heading {
+        font-size: 1.8em;
+    }
+
     /* .mainsection-card-animation-img img {
         height: 3em;
     }
