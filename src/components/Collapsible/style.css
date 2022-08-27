@@ -2,6 +2,13 @@
     background-color: #000000 !important;
     border: none !important;
 }
+.ant-collapse .ant-collapse-header{
+    position: relative;
+}
+.ant-collapse .ant-collapse-header .ant-collapse-expand-icon{
+    position: absolute;
+    right: 10px;
+}
 .ant-collapse > .ant-collapse-item{
     border-bottom: 1px solid #000000 !important;
     margin-top: 10px !important;
