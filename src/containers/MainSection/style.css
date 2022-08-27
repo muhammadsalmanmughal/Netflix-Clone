@@ -30,6 +30,17 @@
     align-items: center;
 }
 
+/* FAQ section css start */
+.main-heading{
+    font-size: 3.125rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+.faq-container{
+    width: 75%;
+    margin: 2% auto;
+}
+/* FAQ section css end */
 
 @media screen and (max-width: 1024px) {
    
