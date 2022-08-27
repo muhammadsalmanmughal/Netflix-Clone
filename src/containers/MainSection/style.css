@@ -39,7 +39,9 @@
 
 .get-started-para {
     text-align: center;
+    font-size: 1.2rem;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .faqs-get-started {
