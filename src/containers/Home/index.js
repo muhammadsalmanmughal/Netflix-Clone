@@ -1,6 +1,8 @@
 import React from "react";
 import { Banner, MainSection } from "../../containers";
 import { Images, Videos } from "../../config";
+import { Footer } from "../../components";
+
 
 const Home = () => {
   const objShowAnimation = {
@@ -54,6 +56,7 @@ const Home = () => {
         img={Images.Create_Kids_Profile}
       />
       <MainSection.SectionFAQS QNA={objFaqs} />
+      <Footer />
     </div>
   );
 };
