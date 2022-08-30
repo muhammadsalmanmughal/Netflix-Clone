@@ -3,8 +3,7 @@ import { Collapse } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 
 import "./style.css";
-const Collapsible = (props) => {
-  console.log("collapsProps: ", props);
+const Collapsible = props => {
   const { Panel } = Collapse;
   return (
     <Collapse

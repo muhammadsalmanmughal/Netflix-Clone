@@ -1,0 +1,39 @@
+.footer-section {
+    border-top: 10px solid #222;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 50px 5%;
+}
+
+.footer-section-wrapper {
+    color: #737373;
+    font-size: 1em;
+    margin-top: 80px;
+    min-width: 190px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.footer-links {
+    box-sizing: border-box;
+    font-size: 13px;
+    max-width: 1000px;
+    padding: 0;
+}
+
+.footer-links-item {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 25%;
+}

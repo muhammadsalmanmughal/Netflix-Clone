@@ -1,29 +1,14 @@
 .navbar {
-    /* position: absolute;
-    z-index: 1; */
     position: relative;
-	z-index: 2;
+    z-index: 2;
     padding: 0px 0px 0px 25px;
 }
 
-.nav_row {
-    /* padding: 26px 0px 0px 10px; */
-}
-
 .nav_logo {
-    /* width: 200px; */
     height: 35px;
 }
 
 .nav_signin {
-    /* background-color: #e50914;
-    float: right;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    padding: 7px 20px;
-    color: #FFFFFF;
-    border-radius: 5px; */
     background-color: #e50914;
     color: white;
     border: none;
@@ -31,5 +16,4 @@
     border-radius: 3px;
     float: right;
     position: relative;
-    /* right: 55px; */
 }
