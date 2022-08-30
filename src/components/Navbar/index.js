@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button } from "antd";
+import { Row, Col } from "antd";
 import { Images } from "../../config";
 import "../../App.css";
 
@@ -7,7 +7,6 @@ import "./style.css";
 const Navbar = () => {
   return (
     <Row
-      // gutter={[10, 10]}
       align="middle"
       justify="space-evenly"
       className="zero_margin nav_row navbar"
