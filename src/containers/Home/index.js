@@ -3,14 +3,22 @@ import { Banner, MainSection } from "../../containers";
 import { Images, Videos } from "../../config";
 import { Footer } from "../../components";
 
-
 const Home = () => {
+  const objBanner = {
+    logo: Images.Logo,
+    mainHeading1: " Unlimited movies, TV",
+    mainHeading2: " shows, and more.",
+    subHeading: "Watch anywhere. Cancel anytime.",
+    para: "Ready to watch? Enter your email to create or restart your membership.",
+  };
+
   const objShowAnimation = {
     posterImage: Images.BoxShot,
     animationImgText0: "Stranger Things",
     animationImgText1: "Downloading...",
     loading: Videos.Loader_Animation,
   };
+
   const objFaqs = [
     {
       question: "What is Netflix?",
@@ -27,9 +35,26 @@ const Home = () => {
     },
   ];
 
+  const footerLinks = [
+    "FAQ",
+    "Help Center",
+    "Account",
+    "Media Center",
+    "Investor Relations",
+    "Jobs",
+    "Ways to Watch",
+    "Terms of Use",
+    "Privacy",
+    "Cookie Preferences",
+    "Corporate Information",
+    "Contact Us",
+    "Speed Test",
+    "Legal Notices",
+    "Only on Netflix",
+  ];
   return (
     <div>
-      <Banner />
+      <Banner data={objBanner}/>
       <MainSection.TextAndImage
         title="Enjoy on your TV."
         subtitle="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
@@ -56,7 +81,7 @@ const Home = () => {
         img={Images.Create_Kids_Profile}
       />
       <MainSection.SectionFAQS QNA={objFaqs} />
-      <Footer />
+      <Footer links={footerLinks} />
     </div>
   );
 };
