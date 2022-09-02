@@ -2,10 +2,13 @@ import React from "react";
 import { Row, Col } from "antd";
 import { Images } from "../../config";
 import { Getstarted } from "../../components";
+import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 import "../../App.css";
 const Banner = ({ data }) => {
+  const navigate = useNavigate();
+
   return (
     <Row className="banner" align="middle" justify="center">
       <Col span={24}>
@@ -18,7 +21,9 @@ const Banner = ({ data }) => {
             <img src={data?.logo} className="nav_logo" />
           </Col>
           <Col span={11}>
-            <a className="nav_signin">Sign In</a>
+            <a className="nav_signin" onClick={() => navigate("/login")}>
+              Sign In
+            </a>
           </Col>
         </Row>
       </Col>
