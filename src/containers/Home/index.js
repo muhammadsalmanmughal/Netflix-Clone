@@ -87,7 +87,11 @@ const Home = () => {
         img={Images.Create_Kids_Profile}
       />
       <MainSection.SectionFAQS QNA={objFaqs} />
-      <Footer links={footerLinks} />
+      <Footer
+        links={footerLinks}
+        footerTop="Questions? Contact us."
+        footerCountry="Netflix Pakistan"
+      />
     </div>
   );
 };
