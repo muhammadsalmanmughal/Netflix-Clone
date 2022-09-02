@@ -1,12 +1,10 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { Images } from "../../config";
-import { Getstarted } from "../../components";
+import { Getstarted, AnchorButton } from "../../components";
 
 import "./style.css";
 import "../../App.css";
 const Banner = ({ data }) => {
-
   return (
     <Row className="banner" align="middle" justify="center">
       <Col span={24}>
@@ -19,9 +17,11 @@ const Banner = ({ data }) => {
             <img src={data?.logo} className="nav_logo" />
           </Col>
           <Col span={11}>
-            <a className="nav_signin" onClick={() => data.navigateTo()}>
-              Sign In
-            </a>
+            <AnchorButton
+              className="nav_signin"
+              navigateTo={data.navigateTo}
+              text="Sign In"
+            />
           </Col>
         </Row>
       </Col>
