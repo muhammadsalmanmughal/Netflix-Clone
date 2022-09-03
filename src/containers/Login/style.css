@@ -1,0 +1,39 @@
+.login-background {
+    background-size: cover;
+    display: block;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.login-background-img {
+    min-height: 100%;
+    min-width: 100%;
+    opacity: .5;
+}
+
+.login-header {
+    line-height: 100px;
+    margin-left: 50px;
+}
+
+.login-header-logo {
+    width: 170px;
+}
+
+.login-body {
+    background-color: red;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 5px;
+
+    min-height: 700px;
+    min-width: 500px;
+}
+
+.login-body-content {
+    padding: 50px;
+}

@@ -1,15 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import { Banner, MainSection } from "../../containers";
 import { Images, Videos } from "../../config";
 import { Footer } from "../../components";
 
 const Home = () => {
+  const navigate = useNavigate();
   const objBanner = {
     logo: Images.Logo,
     mainHeading1: " Unlimited movies, TV",
     mainHeading2: " shows, and more.",
     subHeading: "Watch anywhere. Cancel anytime.",
     para: "Ready to watch? Enter your email to create or restart your membership.",
+    navigateTo: function () {
+      navigate("./login");
+    },
   };
 
   const objShowAnimation = {
@@ -54,7 +60,7 @@ const Home = () => {
   ];
   return (
     <div>
-      <Banner data={objBanner}/>
+      <Banner data={objBanner} />
       <MainSection.TextAndImage
         title="Enjoy on your TV."
         subtitle="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
@@ -81,7 +87,11 @@ const Home = () => {
         img={Images.Create_Kids_Profile}
       />
       <MainSection.SectionFAQS QNA={objFaqs} />
-      <Footer links={footerLinks} />
+      <Footer
+        links={footerLinks}
+        footerTop="Questions? Contact us."
+        footerCountry="Netflix Pakistan"
+      />
     </div>
   );
 };
