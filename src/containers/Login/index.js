@@ -1,6 +1,6 @@
 import React from "react";
 import { Images } from "../../config";
-import { Text } from "../../components";
+import { Text, InputFields } from "../../components";
 
 import "./style.css";
 
@@ -27,8 +27,14 @@ const Login = () => {
                 marginBottom: "28px",
               }}
             />
-            <input placeholder="email" />
-            <input placeholder="password" />
+            <InputFields.BasicInputField
+              placeholder="Email or phone number"
+              type="email"
+            />
+            <InputFields.BasicInputField
+              placeholder="Password"
+              type="password"
+            />
             <button>Sign In</button>
           </div>
           <div className="login-body-content-others"></div>
