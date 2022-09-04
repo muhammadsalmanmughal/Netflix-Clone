@@ -1,5 +1,6 @@
 import React from "react";
 import { Images } from "../../config";
+import { Text } from "../../components";
 
 import "./style.css";
 
@@ -17,7 +18,15 @@ const Login = () => {
       <div className="login-body">
         <div className="login-body-content">
           <div className="login-body-content-form">
-            <h1>Sign In</h1>
+            <Text.HeadingOne
+              text="Sign In"
+              style={{
+                color: "#fff",
+                fontSize: "32px",
+                fontWeight: 700,
+                marginBottom: "28px",
+              }}
+            />
             <input placeholder="email" />
             <input placeholder="password" />
             <button>Sign In</button>
@@ -26,8 +35,6 @@ const Login = () => {
         </div>
       </div>
       <div className="login-footer"></div>
-
-      <h1>Login</h1>
     </div>
   );
 };
