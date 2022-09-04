@@ -6,7 +6,7 @@ import Collapsible from "./Collapsible";
 import Footer from "./Footer";
 import Banner from "./Banner";
 import MainSection from "./MainSection";
-import AnchorButton from "./Buttons/AnchorButton";
+import Buttons from "./Buttons";
 import InputFields from "./InputFields";
 
 
@@ -19,6 +19,6 @@ export {
   AnimatedImage,
   Collapsible,
   Footer,
-  AnchorButton,
+  Buttons,
   InputFields
 };
