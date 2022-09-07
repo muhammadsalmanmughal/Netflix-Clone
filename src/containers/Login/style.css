@@ -17,23 +17,36 @@
 
 .login-header {
     line-height: 100px;
-    margin-left: 50px;
 }
 
 .login-header-logo {
     width: 170px;
+    margin-left: 50px;
 }
 
 .login-body {
-    background-color: red;
+    background-color: rgba(0, 0, 0, .75);
     margin: 0 auto;
     width: 500px;
     border-radius: 5px;
-
     min-height: 700px;
     min-width: 500px;
 }
 
 .login-body-content {
-    padding: 50px;
+    padding: 60px;
+}
+
+.login-body-content-form .input-field {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    border: none;
 }
