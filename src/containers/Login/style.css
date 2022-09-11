@@ -45,6 +45,7 @@
     background: #333;
     color: #fff;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 .input-field:focus {
