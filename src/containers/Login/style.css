@@ -65,3 +65,10 @@
     background: #e50914;
     color: #ffffff;
 }
+.login-body-content-others .login-rememberMe{
+    color:#ffffff;
+}
+.login-rememberMe .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #737373;
+    border-color: #737373;
+}
