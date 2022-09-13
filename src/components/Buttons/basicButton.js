@@ -2,7 +2,11 @@ import React from "react";
 import { Button } from "antd";
 
 const BasicButton = (props) => {
-  return <Button {...props}>{props.text}</Button>;
+  return (
+    <div style={props.containerStyle}>
+      <Button {...props}>{props.text}</Button>;
+    </div>
+  );
 };
 
-export default BasicButton
+export default BasicButton;
