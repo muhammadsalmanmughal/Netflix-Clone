@@ -42,6 +42,7 @@ const Login = () => {
           </div>
           <div className="login-body-content-others">
             <Checkbox className="login-rememberMe">Remember me</Checkbox>
+            <Text.Paragraph className="login-need-help" text='Need help ?'/>
           </div>
         </div>
       </div>
