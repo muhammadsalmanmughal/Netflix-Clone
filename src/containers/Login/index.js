@@ -3,6 +3,7 @@ import { Images } from "../../config";
 import { Text, InputFields, Buttons } from "../../components";
 import { Checkbox } from "antd";
 
+import "../../App.css";
 import "./style.css";
 
 const Login = () => {
@@ -40,9 +41,28 @@ const Login = () => {
             />
             <Buttons.BasicButton text="Sign In" className="login-btnSignIn" />
           </div>
+          <div className="login-body-content-actions">
+            <Checkbox className="login-rememberMe txt-gray">
+              Remember me
+            </Checkbox>
+            <Text.Paragraph className="login-need-help " text="Need help ?" />
+          </div>
           <div className="login-body-content-others">
-            <Checkbox className="login-rememberMe">Remember me</Checkbox>
-            <Text.Paragraph className="login-need-help" text='Need help ?'/>
+            <div className="login-body-content-others-signup">
+              <Text.Paragraph
+                className="txt-gray zero_margin"
+                text="New to Netflix?"
+              />
+              <Text.Paragraph
+                className="zero_margin txt-signup"
+                text="Sign up now."
+              />
+            </div>
+            <p className="zero_margin txt-gray recaptcha">
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot.
+            <span className="learn-more">Learn more.</span>
+            </p>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@
     margin: 0 auto;
     width: 500px;
     border-radius: 5px;
-    min-height: 700px;
+    min-height: 650px;
     min-width: 500px;
 }
 
@@ -68,14 +68,14 @@
     color: #ffffff;
 }
 
-.login-body-content-others {
+.login-body-content-actions {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.login-body-content-others .login-rememberMe {
-    color: #ffffff;
+.txt-gray {
+    color: #737373 !important;
 }
 
 .login-rememberMe .ant-checkbox-checked .ant-checkbox-inner {
@@ -83,11 +83,40 @@
     border-color: #737373;
 }
 
-.login-need-help{
+.login-need-help {
     color: #b3b3b3;
     margin: 0;
     cursor: pointer;
 }
-.login-need-help:hover{
+
+.login-need-help:hover {
+    text-decoration: underline;
+}
+
+.login-body-content-others-signup {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.login-body-content-others .txt-signup {
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.login-body-content-others .txt-signup:hover {
+    text-decoration: underline;
+}
+.recaptcha{
+    margin-top: 15px;
+}
+.learn-more {
+    color: #0071eb;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.learn-more:hover {
     text-decoration: underline;
 }
