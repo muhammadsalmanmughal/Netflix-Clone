@@ -5,6 +5,8 @@ import { Banner, MainSection } from "../../containers";
 import { Images, Videos } from "../../config";
 import { Footer } from "../../components";
 
+import "./style.css";
+
 const Home = () => {
   const navigate = useNavigate();
   const objBanner = {
@@ -87,11 +89,13 @@ const Home = () => {
         img={Images.Create_Kids_Profile}
       />
       <MainSection.SectionFAQS QNA={objFaqs} />
-      <Footer
-        links={footerLinks}
-        footerTop="Questions? Contact us."
-        footerCountry="Netflix Pakistan"
-      />
+      <div className="footer-section">
+        <Footer
+          links={footerLinks}
+          footerTop="Questions? Contact us."
+          footerCountry="Netflix Pakistan"
+        />
+      </div>
     </div>
   );
 };

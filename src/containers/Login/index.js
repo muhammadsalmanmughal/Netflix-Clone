@@ -2,11 +2,20 @@ import React from "react";
 import { Images } from "../../config";
 import { Text, InputFields, Buttons } from "../../components";
 import { Checkbox } from "antd";
+import LoginFooter from "../../components/Footer/loginInFooter";
 
 import "../../App.css";
 import "./style.css";
 
 const Login = () => {
+  const footerLinks = [
+    "FAQ",
+    "Help Center",
+    "Terms of Use",
+    "Privacy",
+    "Cookie Preferences",
+    "Corporate Information",
+  ];
   return (
     <div className="login-wrapper">
       <div className="login-background">
@@ -61,12 +70,14 @@ const Login = () => {
             <p className="zero_margin txt-gray recaptcha">
               This page is protected by Google reCAPTCHA to ensure you're not a
               bot.
-            <span className="learn-more">Learn more.</span>
+              <span className="learn-more">Learn more.</span>
             </p>
           </div>
         </div>
       </div>
-      <div className="login-footer"></div>
+      <div className="login-footer">
+        <LoginFooter links={footerLinks} footerTop="Questions? Contact us." />
+      </div>
     </div>
   );
 };
