@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { Getstarted, AnchorButton } from "../../components";
+import { Getstarted, Buttons } from "../../components";
 
 import "./style.css";
 import "../../App.css";
@@ -17,7 +17,7 @@ const Banner = ({ data }) => {
             <img src={data?.logo} className="nav_logo" />
           </Col>
           <Col span={11}>
-            <AnchorButton
+            <Buttons.AnchorButton
               className="nav_signin"
               navigateTo={data.navigateTo}
               text="Sign In"

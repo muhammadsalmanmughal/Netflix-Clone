@@ -1,2 +1,4 @@
 import MainSectionText from "./MainSectionText";
-export default { MainSectionText };
+import { HeadingOne, Paragraph } from "./text";
+
+export default { MainSectionText, HeadingOne, Paragraph };

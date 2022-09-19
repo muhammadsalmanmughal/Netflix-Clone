@@ -3,9 +3,9 @@ import FooterLinks from "./footerLinks";
 
 import "./style.css";
 
-const Footer = (props) => {
+const LoginFooter = (props) => {
   return (
-    <div className="footer-section-wrapper">
+    <div className="site-footer-wrapper">
       <div className="footer">
         <FooterLinks
           links={props.links}
@@ -17,4 +17,4 @@ const Footer = (props) => {
   );
 };
 
-export default Footer;
+export default LoginFooter;
